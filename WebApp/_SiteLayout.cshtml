@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>@Page.Title - My ASP.NET Web Page</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.common-bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.rtl.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="//kendo.cdn.telerik.com/2016.1.112/styles/kendo.bootstrap.mobile.min.css" rel="stylesheet" crossorigin="anonymous"/>
+
+        @RenderSection("header", required: false)
+    </head>
+    <body>
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+        <script src="//code.jquery.com/jquery-1.9.1.min.js" crossorigin="anonymous"></script>
+        <script src="//kendo.cdn.telerik.com/2016.1.112/js/kendo.all.min.js" crossorigin="anonymous"></script>
+        <script src="//kendo.cdn.telerik.com/2016.1.112/js/kendo.timezones.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="~/assets/js/extend-kendo.js" crossorigin="anonymous"></script>
+        <script src="~/assets/js/site.js"></script>
+        @RenderSection("footer", required: false)
+    </body>
+</html>
