@@ -30,6 +30,7 @@ var console = console || { log: function () { } };
     if (!app.set)
         app.set = proxy(set, app);
 
+
     /** Application pipeline */
     (function () {
         var callbacksPipeline = [];

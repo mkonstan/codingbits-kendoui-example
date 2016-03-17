@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Kendo Datasource";
+}
+<form id="test" action="/" target="_blank" method="post" class="form-horizontal">
+    <input data-role="dropdownlist"
+           data-bind="source: users, value: user"
+           data-value-field="id"
+           data-text-field="name"
+           />
+    <div data-role="grid" data-bind="source: posts"></div>
+</form>
+@section footer
+{
+    <script src="~/assets/js/datasource.js" crossorigin="anonymous"></script>
+}
